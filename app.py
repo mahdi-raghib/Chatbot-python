@@ -1,7 +1,4 @@
 from flask import Flask, jsonify
-from pathlib import 
-import os
-from dotenv import load_dotenv
 import time
 from rocketchat.api import RocketChatAPI
 
@@ -10,7 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
 
-     api = RocketChatAPI(settings={'username': 'someuser', 'password': 'somepassword',
+    api = RocketChatAPI(settings={'username': 'someuser', 'password': 'somepassword',
     'domain': 'https://myrockethchatdomain.com'})
 
 
