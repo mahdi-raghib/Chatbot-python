@@ -2,8 +2,7 @@ import os
 from dotenv import load_dotenv
 load_dotenv()
 from flask import Flask, jsonify
-from rocketchat.api import RocketChatAPI  
-from RocketChatBot import RocketChatBot
+from rocketchat.api import RocketChatAPI
 
 app = Flask(__name__)
 
@@ -15,8 +14,7 @@ def hello():
     #return str(api.get_private_rooms())
     return str(api.get_public_rooms())
 
-    #api.send_message('Hello world!', 'vRRjXCTebcCqR8RFP')
-
+    #return api.send_message('Hello world!', 'mtPcT5FnSvEkCswrE')
 
     
 if __name__ == '__main__':
